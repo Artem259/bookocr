@@ -2,6 +2,13 @@
 
 ### Optical character recognition (OCR) tool for printed book pages.
 
+### Package installation:
+via ``pip``
+```
+pip install bookocr
+```
+or using release files. 
+
 ### Usage examples:
 
 ```
