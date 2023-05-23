@@ -1,13 +1,13 @@
-import os
 import cv2
 import numpy as np
 import tensorflow as tf
 from PIL import Image
+from importlib import resources
 
 
 _image_size = 32
 _char_labels = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,?!:;-()&'"
-_model_file = os.path.join("bookocr", "model.h5")
+_model_file = (resources.files(__package__) / "model.h5")
 _model = tf.keras.models.load_model(_model_file)
 
 
